@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmarDatos">
+
+    <TextView
+        android:id="@+id/textViewDatos"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:hint="Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEditar"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:onClick="Editar"
+        android:text="Editar Datos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescrip" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatos" />
+
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="Telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFecha" />
+
+    <TextView
+        android:id="@+id/textViewCorreo"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="Correo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefono" />
+
+    <TextView
+        android:id="@+id/textViewDescrip"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="Descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorreo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
